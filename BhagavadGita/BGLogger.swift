@@ -8,9 +8,17 @@
 import Foundation
 import SwiftyBeaver
 
-final class BGLogger {
+protocol BGLoggerType {
+    func verbose(message: String)
+    func debug(message: String)
+    func info(message: String)
+    func warning(message: String)
+    func error(message: String)
+}
+
+final class BGLogger: BGLoggerType {
     // MARK: - Properties
-    let log: SwiftyBeaver.Type = {
+    private let log: SwiftyBeaver.Type = {
         let log = SwiftyBeaver.self
         let console = ConsoleDestination()
         log.addDestination(console)
