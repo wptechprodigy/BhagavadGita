@@ -38,9 +38,6 @@ struct ContentView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
-            }.onAppear {
-                let numbers = [1, 2, 3, 4]
-                print(numbers[safeIndex: 2])
             }
             Text("Select an item")
         }
