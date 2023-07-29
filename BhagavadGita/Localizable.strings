@@ -7,4 +7,4 @@
 */
 
 // ContentView
-"ContentView.bhagavad_gita_chapter" =   "Bhagavad Gita Chapter";
+"ContentView.bhagavad_gita_chapter %@" =   "Bhagavad Gita Chapter %@";
