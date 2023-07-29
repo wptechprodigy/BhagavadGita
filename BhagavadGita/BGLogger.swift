@@ -9,11 +9,49 @@ import Foundation
 import SwiftyBeaver
 
 protocol BGLoggerType {
-    func verbose(message: String)
-    func debug(message: String)
-    func info(message: String)
-    func warning(message: String)
-    func error(message: String)
+    func verbose(_ message: String, _ file: String, _ function: String, _ line: Int)
+    func debug(_ message: String, _ file: String, _ function: String, _ line: Int)
+    func info(_ message: String, _ file: String, _ function: String, _ line: Int)
+    func warning(_ message: String, _ file: String, _ function: String, _ line: Int)
+    func error(_ message: String, _ file: String, _ function: String, _ line: Int)
+}
+
+extension BGLoggerType {
+    func verbose(_ message: String,
+                 _ file: String = #file,
+                 _ function: String = #function,
+                 _ line: Int = #line
+    ) {
+        verbose(message, file, function, line)
+    }
+    func debug(_ message: String,
+               _ file: String = #file,
+               _ function: String = #function,
+               _ line: Int = #line
+    ) {
+        debug(message, file, function, line)
+    }
+    func info(_ message: String,
+              _ file: String = #file,
+              _ function: String = #function,
+              _ line: Int = #line
+    ) {
+        info(message, file, function, line)
+    }
+    func warning(_ message: String,
+                 _ file: String = #file,
+                 _ function: String = #function,
+                 _ line: Int = #line
+    ) {
+        warning(message, file, function, line)
+    }
+    func error(_ message: String,
+               _ file: String = #file,
+               _ function: String = #function,
+               _ line: Int = #line
+    ) {
+        error(message, file, function, line)
+    }
 }
 
 final class BGLogger: BGLoggerType {
@@ -25,19 +63,39 @@ final class BGLogger: BGLoggerType {
         return log
     }()
     // MARK: - Log Events
-    func verbose(message: String) {
-        log.verbose(message)
+    func verbose(_ message: String,
+                 _ file: String = #file,
+                 _ function: String = #function,
+                 _ line: Int = #line
+    ) {
+        log.verbose(message, file: file, function: function, line: line)
     }
-    func debug(message: String) {
-        log.debug(message)
+    func debug(_ message: String,
+               _ file: String = #file,
+               _ function: String = #function,
+               _ line: Int = #line
+    ) {
+        log.debug(message, file: file, function: function, line: line)
     }
-    func info(message: String) {
-        log.info(message)
+    func info(_ message: String,
+              _ file: String = #file,
+              _ function: String = #function,
+              _ line: Int = #line
+    ) {
+        log.info(message, file: file, function: function, line: line)
     }
-    func warning(message: String) {
-        log.warning(message)
+    func warning(_ message: String,
+                 _ file: String = #file,
+                 _ function: String = #function,
+                 _ line: Int = #line
+    ) {
+        log.warning(message, file: file, function: function, line: line)
     }
-    func error(message: String) {
-        log.error(message)
+    func error(_ message: String,
+               _ file: String = #file,
+               _ function: String = #function,
+               _ line: Int = #line
+    ) {
+        log.error(message, file: file, function: function, line: line)
     }
 }
