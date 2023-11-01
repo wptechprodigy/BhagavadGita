@@ -20,9 +20,10 @@
 		044526D92A75461E00341035 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 044526D82A75461E00341035 /* SwiftyBeaver */; };
 		044526DB2A75504400341035 /* BGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044526DA2A75504400341035 /* BGLogger.swift */; };
 		044526DE2A757C1800341035 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 044526DD2A757C1800341035 /* Swinject */; };
-		044526E02A757C2900341035 /* Injjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044526DF2A757C2900341035 /* Injjection.swift */; };
+		044526E02A757C2900341035 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044526DF2A757C2900341035 /* Injection.swift */; };
 		044526E22A757DE100341035 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044526E12A757DE100341035 /* ContentViewModel.swift */; };
 		044526E52A758C4600341035 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044526E72A758C4600341035 /* Localizable.strings */; };
+		04D250702A78BAE000E95A6F /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +57,11 @@
 		044526C42A74F2FB00341035 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
 		044526C62A74F2FB00341035 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		044526DA2A75504400341035 /* BGLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGLogger.swift; sourceTree = "<group>"; };
-		044526DF2A757C2900341035 /* Injjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injjection.swift; sourceTree = "<group>"; };
+		044526DF2A757C2900341035 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		044526E12A757DE100341035 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		044526E62A758C4600341035 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		044526E82A758CF300341035 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		044526A32A74F2F800341035 /* BhagavadGita */ = {
 			isa = PBXGroup;
 			children = (
+				04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */,
 				044526A42A74F2F800341035 /* BhagavadGitaApp.swift */,
 				044526A62A74F2F800341035 /* ContentView.swift */,
 				044526A82A74F2FA00341035 /* Assets.xcassets */,
@@ -120,7 +123,7 @@
 				044526AF2A74F2FA00341035 /* BhagavadGita.xcdatamodeld */,
 				044526AA2A74F2FA00341035 /* Preview Content */,
 				044526DA2A75504400341035 /* BGLogger.swift */,
-				044526DF2A757C2900341035 /* Injjection.swift */,
+				044526DF2A757C2900341035 /* Injection.swift */,
 				044526E12A757DE100341035 /* ContentViewModel.swift */,
 				044526E72A758C4600341035 /* Localizable.strings */,
 			);
@@ -159,6 +162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044526CA2A74F2FB00341035 /* Build configuration list for PBXNativeTarget "BhagavadGita" */;
 			buildPhases = (
+				04DF05F12A79433B005E5BE7 /* SwiftGen */,
 				044526D62A75088E00341035 /* SwiftLint */,
 				0445269D2A74F2F800341035 /* Sources */,
 				0445269E2A74F2F800341035 /* Frameworks */,
@@ -309,6 +313,24 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		04DF05F12A79433B005E5BE7 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -321,7 +343,8 @@
 				044526DB2A75504400341035 /* BGLogger.swift in Sources */,
 				044526E22A757DE100341035 /* ContentViewModel.swift in Sources */,
 				044526A72A74F2F800341035 /* ContentView.swift in Sources */,
-				044526E02A757C2900341035 /* Injjection.swift in Sources */,
+				044526E02A757C2900341035 /* Injection.swift in Sources */,
+				04D250702A78BAE000E95A6F /* Strings+Generated.swift in Sources */,
 				044526A52A74F2F800341035 /* BhagavadGitaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
