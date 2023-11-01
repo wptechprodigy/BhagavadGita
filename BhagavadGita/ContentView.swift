@@ -5,8 +5,8 @@
 //  Created by waheedCodes on 29/07/2023.
 //
 
-import SwiftUI
 import BGUtility
+import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ContentViewModel()
@@ -14,10 +14,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text(L10n.ContentView.bhagavadGitaChapter(count))
-                Text(L10n.ContentView.bhagavadGita)
                 Text("ContentView.bhagavad_gita_chapter \(count)")
-                Text(L10n.ContentView.bhagavad)
+                Text(L10n.ContentView.bhagavadGita)
             }
             .onAppear {
                 viewModel.onAppear()

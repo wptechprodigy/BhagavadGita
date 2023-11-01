@@ -167,6 +167,7 @@
 				0445269D2A74F2F800341035 /* Sources */,
 				0445269E2A74F2F800341035 /* Frameworks */,
 				0445269F2A74F2F800341035 /* Resources */,
+				0446DE332AF2B4E100C4713D /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -312,6 +313,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		0446DE332AF2B4E100C4713D /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 		04DF05F12A79433B005E5BE7 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;

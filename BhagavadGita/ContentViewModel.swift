@@ -12,4 +12,6 @@ final class ContentViewModel: ObservableObject {
     func onAppear() {
         logger.info("View is loaded...")
     }
+
+    func aa() {}
 }
