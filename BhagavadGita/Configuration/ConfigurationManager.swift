@@ -36,3 +36,20 @@ enum API {
         }
     }
 }
+
+enum ConfigurationManager {
+    enum Environment {
+        case dev
+        case qualityAssurance
+        case prod
+    }
+    static var environment: Environment {
+        #if DEV
+            return .dev
+        #elseif QA
+            return .qualityAssurance
+        #elseif PROD
+            return .prod
+        #endif
+    }
+}
