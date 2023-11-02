@@ -26,6 +26,7 @@
 		04C642F22AF40E2B00252376 /* BhagavadGita-Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */; };
 		04C642F32AF40E2F00252376 /* BhagavadGita-QA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */; };
 		04C642F52AF40E4200252376 /* BhagavadGita-Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */; };
+		04C642F82AF40FE200252376 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C642F72AF40FE200252376 /* ConfigurationManager.swift */; };
 		04D250702A78BAE000E95A6F /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BhagavadGita-Dev.xcconfig"; sourceTree = "<group>"; };
 		04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BhagavadGita-QA.xcconfig"; sourceTree = "<group>"; };
 		04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BhagavadGita-Prod.xcconfig"; sourceTree = "<group>"; };
+		04C642F62AF40F4B00252376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04C642F72AF40FE200252376 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -121,6 +124,7 @@
 		044526A32A74F2F800341035 /* BhagavadGita */ = {
 			isa = PBXGroup;
 			children = (
+				04C642F62AF40F4B00252376 /* Info.plist */,
 				04C642EF2AF40DED00252376 /* Configuration */,
 				04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */,
 				044526A42A74F2F800341035 /* BhagavadGitaApp.swift */,
@@ -168,6 +172,7 @@
 				04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */,
 				04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */,
 				04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */,
+				04C642F72AF40FE200252376 /* ConfigurationManager.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 			files = (
 				044526B12A74F2FA00341035 /* BhagavadGita.xcdatamodeld in Sources */,
 				044526AE2A74F2FA00341035 /* Persistence.swift in Sources */,
+				04C642F82AF40FE200252376 /* ConfigurationManager.swift in Sources */,
 				044526DB2A75504400341035 /* BGLogger.swift in Sources */,
 				044526E22A757DE100341035 /* ContentViewModel.swift in Sources */,
 				044526A72A74F2F800341035 /* ContentView.swift in Sources */,
@@ -484,6 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-Dev";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -539,6 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-Dev";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -551,6 +559,7 @@
 		};
 		044526CB2A74F2FB00341035 /* Debug-Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -560,7 +569,7 @@
 				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-Dev";
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -581,6 +590,7 @@
 		};
 		044526CC2A74F2FB00341035 /* Release-Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -590,7 +600,7 @@
 				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-Dev";
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -736,6 +746,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BhagavadGita;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -748,6 +759,7 @@
 		};
 		04C642E02AF3FC9700252376 /* Debug-Prod */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -757,7 +769,7 @@
 				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = BhagavadGita;
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -865,6 +877,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-QA";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -877,6 +890,7 @@
 		};
 		04C642E42AF3FC9D00252376 /* Debug-QA */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -886,7 +900,7 @@
 				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-QA";
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -988,6 +1002,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BhagavadGita;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1000,6 +1015,7 @@
 		};
 		04C642E82AF3FCA200252376 /* Release-Prod */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1009,7 +1025,7 @@
 				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = BhagavadGita;
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1111,6 +1127,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-QA";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1123,6 +1140,7 @@
 		};
 		04C642EC2AF3FCA800252376 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1132,7 +1150,7 @@
 				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "BhagavadGita-QA";
+				INFOPLIST_FILE = BhagavadGita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

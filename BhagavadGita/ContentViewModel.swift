@@ -11,6 +11,7 @@ final class ContentViewModel: ObservableObject {
     @Injected private var logger: BGLoggerType
     func onAppear() {
         logger.info("View is loaded...")
+        print(API.baseURL)
     }
 
     func aa() {}
