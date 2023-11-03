@@ -43,6 +43,7 @@ enum ConfigurationManager {
         case qualityAssurance
         case prod
     }
+
     static var environment: Environment {
         #if DEV
             return .dev
