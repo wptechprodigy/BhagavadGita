@@ -5,15 +5,13 @@
 //  Created by waheedCodes on 29/07/2023.
 //
 
+import BGUtility
 import Foundation
 
 final class ContentViewModel: ObservableObject {
     @Injected private var logger: BGLoggerType
+    @Injected private var analyticsManager: AnalyticsManagerProtocol
     func onAppear() {
-        logger.info("View is loaded...")
-        print(API.baseURL)
-        print(ConfigurationManager.environment)
+        analyticsManager.logEvent(event: AnalyticsEvent.clickButtonEvent)
     }
-
-    func aa() {}
 }
