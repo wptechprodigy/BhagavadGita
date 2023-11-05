@@ -28,6 +28,9 @@ final class Injection {
         container.register(BGLoggerType.self) { _ in
             BGLogger()
         }
+        container.register(AnalyticsManagerProtocol.self) { _ in
+            AnalyticsManager(logger: FirebaseAnalyticsManager())
+        }
         return container
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct BhagavadGitaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
