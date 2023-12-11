@@ -53,12 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		043F52312AF4EE11003B87A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		043F52332AF4EE11003B87A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		043F52352AF4EE11003B87A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		043F52362AF4EF4C003B87A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043F523A2AF51D2E003B87A9 /* FirebaseAnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsManager.swift; sourceTree = "<group>"; };
 		043F523C2AF68D45003B87A9 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		043F52432AF7C17A003B87A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		043F52442AF7C193003B87A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		043F52452AF7C1A1003B87A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		044526A12A74F2F800341035 /* BhagavadGita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhagavadGita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044526A42A74F2F800341035 /* BhagavadGitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaApp.swift; sourceTree = "<group>"; };
 		044526A62A74F2F800341035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,38 +114,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		043F522F2AF4EE11003B87A9 /* Firebase */ = {
+		043F523F2AF7C13A003B87A9 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				043F52302AF4EE11003B87A9 /* Prod */,
-				043F52322AF4EE11003B87A9 /* QA */,
-				043F52342AF4EE11003B87A9 /* Dev */,
+				043F52422AF7C14E003B87A9 /* QA */,
+				043F52412AF7C148003B87A9 /* Prod */,
+				043F52402AF7C142003B87A9 /* Dev */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		043F52302AF4EE11003B87A9 /* Prod */ = {
+		043F52402AF7C142003B87A9 /* Dev */ = {
 			isa = PBXGroup;
 			children = (
-				043F52312AF4EE11003B87A9 /* GoogleService-Info.plist */,
+				043F52432AF7C17A003B87A9 /* GoogleService-Info.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		043F52412AF7C148003B87A9 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				043F52442AF7C193003B87A9 /* GoogleService-Info.plist */,
 			);
 			path = Prod;
 			sourceTree = "<group>";
 		};
-		043F52322AF4EE11003B87A9 /* QA */ = {
+		043F52422AF7C14E003B87A9 /* QA */ = {
 			isa = PBXGroup;
 			children = (
-				043F52332AF4EE11003B87A9 /* GoogleService-Info.plist */,
+				043F52452AF7C1A1003B87A9 /* GoogleService-Info.plist */,
 			);
 			path = QA;
-			sourceTree = "<group>";
-		};
-		043F52342AF4EE11003B87A9 /* Dev */ = {
-			isa = PBXGroup;
-			children = (
-				043F52352AF4EE11003B87A9 /* GoogleService-Info.plist */,
-			);
-			path = Dev;
 			sourceTree = "<group>";
 		};
 		044526982A74F2F800341035 = {
@@ -171,7 +171,7 @@
 		044526A32A74F2F800341035 /* BhagavadGita */ = {
 			isa = PBXGroup;
 			children = (
-				043F522F2AF4EE11003B87A9 /* Firebase */,
+				043F523F2AF7C13A003B87A9 /* Firebase */,
 				04C642F62AF40F4B00252376 /* Info.plist */,
 				04C642EF2AF40DED00252376 /* Configuration */,
 				04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */,
