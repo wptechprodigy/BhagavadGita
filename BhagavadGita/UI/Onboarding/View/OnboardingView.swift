@@ -19,6 +19,20 @@ struct OnboardingView: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle())
+            VStack {
+                Spacer()
+                controlBar.padding()
+                Spacer().frame(height: 100)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var controlBar: some View {
+        HStack {
+            Spacer()
+            PageControl(currentPage: $currentIndex, numberOfPages: viewModel.onboardingData.count)
+            Spacer()
         }
     }
 }
