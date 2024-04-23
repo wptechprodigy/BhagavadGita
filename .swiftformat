@@ -32,12 +32,20 @@
 --stripunusedargs always
 --swiftversion 5.1
 --trimwhitespace always
---wraparguments preserve
+--wrapparameters before-first
+--wraparguments before-first
 --wrapcollections preserve
---wrapconditions after-first
 --redundanttype inferred
+--typeblanklines preserve
+--funcattributes prev-line
 
 # rules
 
 --enable isEmpty
 --enable blanklinesbetweenimports
+--enable blankLinesBetweenScopes
+--enable consecutiveSpaces
+--enable duplicateImports
+--enable redundantBackticks
+--enable redundantNilInit
+--enable spaceAroundParens

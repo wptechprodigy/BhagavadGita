@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040038B92BD7D861005CB50F /* OnboardingInteriorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040038B82BD7D861005CB50F /* OnboardingInteriorView.swift */; };
+		0438F1722BD7AB7B002A957B /* Onboarding.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E211912BCE6B7A00597BD4 /* Onboarding.json */; };
+		0438F1742BD7AE0D002A957B /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F1732BD7AE0D002A957B /* PageControl.swift */; };
 		043F52292AF4DD69003B87A9 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 043F52282AF4DD69003B87A9 /* BGUtility */; };
 		043F522C2AF4E9DF003B87A9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 043F522B2AF4E9DF003B87A9 /* FirebaseAnalytics */; };
 		043F522E2AF4E9DF003B87A9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 043F522D2AF4E9DF003B87A9 /* FirebaseCrashlytics */; };
@@ -28,11 +31,16 @@
 		044526E02A757C2900341035 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044526DF2A757C2900341035 /* Injection.swift */; };
 		044526E22A757DE100341035 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044526E12A757DE100341035 /* ContentViewModel.swift */; };
 		044526E52A758C4600341035 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044526E72A758C4600341035 /* Localizable.strings */; };
+		0489D0032B27DF5F009A2A36 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D0022B27DF5F009A2A36 /* OnboardingViewModel.swift */; };
+		0489D0052B27DF7B009A2A36 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D0042B27DF7B009A2A36 /* OnboardingModel.swift */; };
+		0489D0072B27DF9F009A2A36 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D0062B27DF9F009A2A36 /* OnboardingView.swift */; };
 		04C642F22AF40E2B00252376 /* BhagavadGita-Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */; };
 		04C642F32AF40E2F00252376 /* BhagavadGita-QA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */; };
 		04C642F52AF40E4200252376 /* BhagavadGita-Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */; };
 		04C642F82AF40FE200252376 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C642F72AF40FE200252376 /* ConfigurationManager.swift */; };
 		04D250702A78BAE000E95A6F /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */; };
+		04E211922BCE6B7A00597BD4 /* Onboarding.json in Sources */ = {isa = PBXBuildFile; fileRef = 04E211912BCE6B7A00597BD4 /* Onboarding.json */; };
+		04E211942BCE800700597BD4 /* LocalJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E211932BCE800700597BD4 /* LocalJSONLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040038B82BD7D861005CB50F /* OnboardingInteriorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteriorView.swift; sourceTree = "<group>"; };
+		0438F1732BD7AE0D002A957B /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		043F52362AF4EF4C003B87A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043F523A2AF51D2E003B87A9 /* FirebaseAnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsManager.swift; sourceTree = "<group>"; };
 		043F523C2AF68D45003B87A9 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
@@ -76,12 +86,17 @@
 		044526E12A757DE100341035 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		044526E62A758C4600341035 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		044526E82A758CF300341035 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0489D0022B27DF5F009A2A36 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		0489D0042B27DF7B009A2A36 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		0489D0062B27DF9F009A2A36 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		04C642F02AF40E1300252376 /* BhagavadGita-Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BhagavadGita-Dev.xcconfig"; sourceTree = "<group>"; };
 		04C642F12AF40E2600252376 /* BhagavadGita-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BhagavadGita-QA.xcconfig"; sourceTree = "<group>"; };
 		04C642F42AF40E4200252376 /* BhagavadGita-Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BhagavadGita-Prod.xcconfig"; sourceTree = "<group>"; };
 		04C642F62AF40F4B00252376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04C642F72AF40FE200252376 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		04D2506F2A78BADF00E95A6F /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = SOURCE_ROOT; };
+		04E211912BCE6B7A00597BD4 /* Onboarding.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Onboarding.json; sourceTree = "<group>"; };
+		04E211932BCE800700597BD4 /* LocalJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +186,8 @@
 		044526A32A74F2F800341035 /* BhagavadGita */ = {
 			isa = PBXGroup;
 			children = (
+				04E211902BCE6B5300597BD4 /* Utils */,
+				0489CFFD2B27DE26009A2A36 /* UI */,
 				043F523F2AF7C13A003B87A9 /* Firebase */,
 				04C642F62AF40F4B00252376 /* Info.plist */,
 				04C642EF2AF40DED00252376 /* Configuration */,
@@ -217,6 +234,49 @@
 			path = BhagavadGitaUITests;
 			sourceTree = "<group>";
 		};
+		0489CFFD2B27DE26009A2A36 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0489CFFE2B27DE35009A2A36 /* Onboarding */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0489CFFE2B27DE35009A2A36 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0489D0012B27DE47009A2A36 /* View */,
+				0489D0002B27DE45009A2A36 /* Model */,
+				0489CFFF2B27DE3E009A2A36 /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0489CFFF2B27DE3E009A2A36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0489D0022B27DF5F009A2A36 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0489D0002B27DE45009A2A36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0489D0042B27DF7B009A2A36 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0489D0012B27DE47009A2A36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0489D0062B27DF9F009A2A36 /* OnboardingView.swift */,
+				040038B82BD7D861005CB50F /* OnboardingInteriorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04C642EF2AF40DED00252376 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +286,16 @@
 				04C642F72AF40FE200252376 /* ConfigurationManager.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		04E211902BCE6B5300597BD4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04E211912BCE6B7A00597BD4 /* Onboarding.json */,
+				04E211932BCE800700597BD4 /* LocalJSONLoader.swift */,
+				0438F1732BD7AE0D002A957B /* PageControl.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0438F1722BD7AB7B002A957B /* Onboarding.json in Resources */,
 				04C642F32AF40E2F00252376 /* BhagavadGita-QA.xcconfig in Resources */,
 				044526AC2A74F2FA00341035 /* Preview Assets.xcassets in Resources */,
 				044526E52A758C4600341035 /* Localizable.strings in Resources */,
@@ -457,15 +528,22 @@
 			files = (
 				043F523D2AF68D45003B87A9 /* AnalyticsManager.swift in Sources */,
 				044526B12A74F2FA00341035 /* BhagavadGita.xcdatamodeld in Sources */,
+				040038B92BD7D861005CB50F /* OnboardingInteriorView.swift in Sources */,
+				0438F1742BD7AE0D002A957B /* PageControl.swift in Sources */,
+				04E211942BCE800700597BD4 /* LocalJSONLoader.swift in Sources */,
 				044526AE2A74F2FA00341035 /* Persistence.swift in Sources */,
+				0489D0072B27DF9F009A2A36 /* OnboardingView.swift in Sources */,
 				04C642F82AF40FE200252376 /* ConfigurationManager.swift in Sources */,
+				0489D0052B27DF7B009A2A36 /* OnboardingModel.swift in Sources */,
 				044526DB2A75504400341035 /* BGLogger.swift in Sources */,
 				044526E22A757DE100341035 /* ContentViewModel.swift in Sources */,
+				0489D0032B27DF5F009A2A36 /* OnboardingViewModel.swift in Sources */,
 				044526A72A74F2F800341035 /* ContentView.swift in Sources */,
 				044526E02A757C2900341035 /* Injection.swift in Sources */,
 				04D250702A78BAE000E95A6F /* Strings+Generated.swift in Sources */,
 				043F52372AF4EF4C003B87A9 /* AppDelegate.swift in Sources */,
 				044526A52A74F2F800341035 /* BhagavadGitaApp.swift in Sources */,
+				04E211922BCE6B7A00597BD4 /* Onboarding.json in Sources */,
 				043F523B2AF51D2E003B87A9 /* FirebaseAnalyticsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

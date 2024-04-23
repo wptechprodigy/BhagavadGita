@@ -11,11 +11,14 @@ import SwiftUI
 struct BhagavadGitaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     let persistenceController = PersistenceController.shared
-
+    @AppStorage("isOnboardingLoaded") var isOnboardingLoaded = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            if isOnboardingLoaded {
+                ContentView()
+            } else {
+                OnboardingView()
+            }
         }
     }
 }
