@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040038B92BD7D861005CB50F /* OnboardingInteriorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040038B82BD7D861005CB50F /* OnboardingInteriorView.swift */; };
 		0438F1722BD7AB7B002A957B /* Onboarding.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E211912BCE6B7A00597BD4 /* Onboarding.json */; };
 		0438F1742BD7AE0D002A957B /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F1732BD7AE0D002A957B /* PageControl.swift */; };
 		043F52292AF4DD69003B87A9 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 043F52282AF4DD69003B87A9 /* BGUtility */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040038B82BD7D861005CB50F /* OnboardingInteriorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteriorView.swift; sourceTree = "<group>"; };
 		0438F1732BD7AE0D002A957B /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		043F52362AF4EF4C003B87A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043F523A2AF51D2E003B87A9 /* FirebaseAnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsManager.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				0489D0062B27DF9F009A2A36 /* OnboardingView.swift */,
+				040038B82BD7D861005CB50F /* OnboardingInteriorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 			files = (
 				043F523D2AF68D45003B87A9 /* AnalyticsManager.swift in Sources */,
 				044526B12A74F2FA00341035 /* BhagavadGita.xcdatamodeld in Sources */,
+				040038B92BD7D861005CB50F /* OnboardingInteriorView.swift in Sources */,
 				0438F1742BD7AE0D002A957B /* PageControl.swift in Sources */,
 				04E211942BCE800700597BD4 /* LocalJSONLoader.swift in Sources */,
 				044526AE2A74F2FA00341035 /* Persistence.swift in Sources */,
